@@ -3,7 +3,7 @@ import * as express from "express";
 import * as cors from "cors";
 import { nanoid } from "nanoid";
 
-const port = 1234;
+const port = process.env.PORT || 1234;
 const app = express();
 
 app.use(express.json());
